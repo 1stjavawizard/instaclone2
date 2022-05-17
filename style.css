@@ -1,0 +1,210 @@
+body{
+    width: 100%;
+   background-color: #fafafa;
+}
+
+.universal{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+/* styles for main elements */
+main{
+    
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.phone_container{
+    width:50%;
+    
+    height:100%;
+}
+
+.form_container{
+    width:50%;
+    background-color: #fafafa;
+    flex-direction: column;
+    justify-content: center;    
+    align-items: center;
+   
+}
+
+form{
+   background-color:#fff;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   padding:40px;
+   height:50%;
+   width:40%;
+   border:1px solid #dbdbdb;
+}
+
+.signup_container{
+    background-color:#fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:40px;
+    height:10%;
+    width:40%;
+    margin-top: 2%;
+    border:1px solid #dbdbdb;
+}
+
+.social_container{
+    background-color:#fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:40px;
+    height:1%;
+    width:40%;
+    margin-top: 10px;
+   
+}
+
+.form_group{
+    width:250px;
+    margin-bottom: 10px;
+    height:25px;
+   padding:1%;
+}
+
+.phone_group,.pass_group,.login_group{
+    background-color:#fafafa
+    width: 90%;
+    padding:5px;
+    border:1px solid #dbdbdb;
+}
+
+.phone_group .username{
+    width:inherit;
+    outline:none;
+    border:0px;
+    font-size: 0.9rem;
+    text-align: center;
+}
+.pass_group{
+  display: flex;
+}
+.pass_group .pass{
+    width:inherit;
+    outline:none;
+    border:0px;
+}
+.pass_group #mbtn{
+    width:30%;
+    background-color: transparent;
+    outline: none;
+    border: 0px;
+}
+.login_group{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#b2dffc;
+}
+.login_group .login{
+   flex-grow: 1;
+   height: inherit;
+   border:0px;
+   outline: none;
+   background-color:#b2dffc;
+   color:white;
+}
+.insta_group{
+    margin-bottom:50px;
+}
+.social_logo_container{
+    display: flex;
+    
+}
+.first_logo img,.second_logo img{
+    width:100px;
+}
+.divider_group{
+    display: flex;  
+    width: 90%;
+}
+.divider_group .first_hr,.divider_group .second_hr,.divider_group .third_hr{
+    width:33%;
+   
+}
+.second_hr{
+    text-align: center;
+    color:#8e8eaa;
+}
+
+.face_group{
+    background-color: transparent;
+    width: 90%;    
+    text-align: center;
+}
+.face_group button{
+    border:0px;
+    outline:none;
+    width: inherit;
+    background-color: transparent;
+}
+
+
+.container{
+    width:60%;
+    height:90%;
+    background-image: url(images/phone.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:120% 100%;
+    margin-left:35%;
+}
+.img_container{
+    width:70%;
+    height:90%;
+    margin:5% 0px 0px 28%;
+    position: relative;
+}
+@keyframes move {
+    0%{
+        background-image: url(images/a.png);
+    }
+    25%{
+        background-image: url(images/b.png);
+    }
+    50%{
+        background-image: url(images/c.png);
+    }
+    75%{
+        background-image: url(images/d.png);
+    }
+
+    100%{
+        background-image: url(images/a.png);
+    }
+}
+.img{
+    position: absolute;
+    top:0px;
+    left:10px;
+    width:93%;
+    height: 105%;   
+    background-repeat: no-repeat;
+    background-size: 100% 90%;
+    background-position: center;
+    animation-name: move;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    
+}
+footer{
+    background-color: blue;
+    height: 10vh;
+}
